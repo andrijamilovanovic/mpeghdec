@@ -10,5 +10,8 @@ if(${mpeghdec_BUILD_UIMANAGER})
     "mpeghUiManager/main_mpeghUiManager.cpp"
     "mpeghUiManager/interactivityScriptParser.h"
   )
-  target_link_libraries(mpeghUiManager mpeghdec mmtisobmff ilo)
+  target_link_libraries(mpeghUiManager mpeghdec mmtisobmff ilo 
+    -static-libgcc
+    -static-libstc++
+  )
 endif()
