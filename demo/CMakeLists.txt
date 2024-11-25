@@ -12,6 +12,6 @@ if(${mpeghdec_BUILD_UIMANAGER})
   )
   target_link_libraries(mpeghUiManager mpeghdec mmtisobmff ilo 
     -static-libgcc
-    -static-libstc++
+    -static-libstdc++
   )
 endif()
